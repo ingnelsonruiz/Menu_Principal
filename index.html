@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dusakawi EPSI | Portal de Gestión Inteligente</title>
+    <title>Dusakawi EPSI | Portal de Aplicaciones</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fdfdfd; }
-        .app-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
-        .app-card:hover { transform: translateY(-12px); shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15); }
-        .bg-gradient-soft { background: radial-gradient(circle at top right, #f8fafc, #f1f5f9); }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; }
+        .app-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); border: 1px solid #e2e8f0; }
+        .app-card:hover { transform: translateY(-10px); shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1); border-color: #10b981; }
+        .gradient-bg { background: radial-gradient(circle at top right, #ffffff, #f1f5f9); }
     </style>
 </head>
-<body class="bg-gradient-soft min-h-screen flex flex-col">
+<body class="gradient-bg min-h-screen flex flex-col">
 
-    <header class="py-10 px-6">
+    <header class="py-12 px-6">
         <div class="max-w-4xl mx-auto text-center">
-            <img src="https://via.placeholder.com/200x80?text=LOGO+DUSAKAWI" alt="Dusakawi Logo" class="mx-auto mb-6 h-20 object-contain">
-            <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">Portal de Gestión <span class="text-emerald-600">Dusakawi EPSI</span></h1>
-            <p class="text-slate-500 mt-4 text-lg font-medium">Seleccione el ecosistema de herramientas digitales para iniciar sus procesos.</p>
+            <img src="dusakawi_logo.jpeg" alt="Logo Dusakawi" class="mx-auto mb-8 h-24 w-auto object-contain drop-shadow-md">
+            
+            <h1 class="text-4xl font-extrabold text-slate-900 tracking-tight">
+                Plataforma Digital <span class="text-emerald-600 font-black">Dusakawi EPSI</span>
+            </h1>
+            <p class="text-slate-500 mt-4 text-lg font-medium max-w-2xl mx-auto italic">
+                Bienvenido al centro de gestión de servicios. Seleccione el sistema al que desea ingresar.
+            </p>
         </div>
     </header>
 
@@ -28,41 +33,45 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-5xl w-full">
             
             <a href="https://fronted-analisis-rcv.vercel.app/" target="_blank" class="group">
-                <div class="app-card bg-white p-8 rounded-[2.5rem] shadow-xl shadow-slate-200 border border-slate-100 flex flex-col h-full relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-                        <i data-lucide="heart-pulse" class="w-32 h-32 text-rose-600"></i>
+                <div class="app-card bg-white p-8 rounded-[2.5rem] shadow-xl shadow-slate-200 flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute -top-4 -right-4 p-8 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+                        <i data-lucide="heart-pulse" class="w-40 h-40 text-rose-600"></i>
                     </div>
                     
-                    <div class="bg-rose-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+                    <div class="bg-rose-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 shadow-inner">
                         <i data-lucide="activity" class="text-rose-600 w-8 h-8"></i>
                     </div>
                     
-                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Análisis de Riesgo <br>Cardiovascular (RCV)</h2>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8">Estratificación automática de pacientes, análisis de metas LDL y diagnóstico inteligente basado en guías clínicas.</p>
+                    <h2 class="text-2xl font-extrabold text-slate-800 mb-4">Análisis de Riesgo <br>Cardiovascular</h2>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 font-medium">
+                        Sistema de estratificación de pacientes (RCV), análisis de metas LDL e interpretación clínica automática para medicina interna.
+                    </p>
                     
-                    <div class="mt-auto flex items-center gap-2 text-rose-600 font-bold text-sm uppercase tracking-wider">
-                        Acceder al Analizador
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    <div class="mt-auto flex items-center gap-2 text-rose-600 font-bold text-xs uppercase tracking-widest">
+                        Abrir Analítica
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
                     </div>
                 </div>
             </a>
 
             <a href="https://dusakawi-frontend.vercel.app/" target="_blank" class="group">
-                <div class="app-card bg-white p-8 rounded-[2.5rem] shadow-xl shadow-slate-200 border border-slate-100 flex flex-col h-full relative overflow-hidden">
-                    <div class="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
-                        <i data-lucide="hospital" class="w-32 h-32 text-emerald-600"></i>
+                <div class="app-card bg-white p-8 rounded-[2.5rem] shadow-xl shadow-slate-200 flex flex-col h-full relative overflow-hidden">
+                    <div class="absolute -top-4 -right-4 p-8 opacity-[0.03] group-hover:opacity-10 transition-opacity">
+                        <i data-lucide="building-2" class="w-40 h-40 text-emerald-600"></i>
                     </div>
 
-                    <div class="bg-emerald-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
-                        <i data-lucide="users" class="text-emerald-600 w-8 h-8"></i>
+                    <div class="bg-emerald-50 w-16 h-16 rounded-2xl flex items-center justify-center mb-8 shadow-inner">
+                        <i data-lucide="database" class="text-emerald-600 w-8 h-8"></i>
                     </div>
                     
-                    <h2 class="text-2xl font-bold text-slate-800 mb-4">Gestión Administrativa <br>Dusakawi Core</h2>
-                    <p class="text-slate-500 text-sm leading-relaxed mb-8">Acceso a la plataforma integral de servicios de salud, gestión de afiliados y reportes institucionales.</p>
+                    <h2 class="text-2xl font-extrabold text-slate-800 mb-4">Gestión Administrativa <br>Dusakawi Core</h2>
+                    <p class="text-slate-500 text-sm leading-relaxed mb-8 font-medium">
+                        Plataforma integral para la gestión de afiliados, servicios de salud y reportes operativos institucionales.
+                    </p>
                     
-                    <div class="mt-auto flex items-center gap-2 text-emerald-600 font-bold text-sm uppercase tracking-wider">
-                        Ingresar al Sistema
-                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    <div class="mt-auto flex items-center gap-2 text-emerald-600 font-bold text-xs uppercase tracking-widest">
+                        Ingresar al Core
+                        <i data-lucide="external-link" class="w-4 h-4"></i>
                     </div>
                 </div>
             </a>
@@ -70,16 +79,13 @@
         </div>
     </main>
 
-    <footer class="py-8 border-t border-slate-200 bg-white">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
-            <div class="flex items-center gap-2">
-                <div class="w-2 h-2 bg-emerald-500 rounded-full"></div>
-                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Tecnología de Datos Dusakawi EPSI</p>
+    <footer class="py-10 border-t border-slate-200 bg-white shadow-[0_-1px_10px_rgba(0,0,0,0.02)]">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-3">
+                <div class="w-2.5 h-2.5 bg-emerald-500 rounded-full animate-pulse"></div>
+                <p class="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">Sistemas de Información Dusakawi EPSI</p>
             </div>
-            <div class="flex gap-6 text-[10px] font-bold text-slate-400 uppercase">
-                <span class="hover:text-slate-600 cursor-pointer italic">Seguridad de la Información</span>
-                <span class="hover:text-slate-600 cursor-pointer italic">Soporte Técnico</span>
-            </div>
+            <p class="text-[10px] font-bold text-slate-300 uppercase italic">© 2025 - Desarrollo Tecnológico en Salud</p>
         </div>
     </footer>
 
